@@ -1,8 +1,7 @@
 import { Square } from './Square.jsx'
 
 export function WinnerModal ({ winner, resetGame }) {
-  if (winner === null) return null
-  return (
+  return winner && (
     <section className='winner'>
       <div className='text'>
         <h2>{winner === false ? 'Empate' : ' Ganó: '}</h2>
